@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <h1 class="h1"> DRUM KIT </h1>
+
+  <div class="instructions">
+    <h3 class="h3">Press the keys listed below on your keyboard. Each key will play a different sound.</h3>
+    <h4>(Play the first row in order from left to right to hear a special message)</h4>
+  </div>
+  <!-- MAIN DIV START -->
+  <div class="mainDiv">
+
+    <div class="keys">
+      <!-- ROW 1 START-->
+      <div data-key="81" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">Please</span>
+      </div>
+      <div data-key="87" class="key">
+        <kbd>W</kbd>
+        <span class="sound">Hire</span>
+      </div>
+      <div data-key="69" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Me</span>
+      </div>
+      <div data-key="82" class="key">
+        <kbd>R</kbd>
+        <span class="sound">You</span>
+      </div>
+      <div data-key="84" class="key">
+        <kbd>T</kbd>
+        <span class="sound">Wont</span>
+      </div>
+      <div data-key="89" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">Regret</span>
+      </div>
+      <div data-key="85" class="key">
+        <kbd>U</kbd>
+        <span class="sound">It</span>
+      </div>
+      <div data-key="73" class="key">
+        <kbd>I</kbd>
+        <span class="sound">Ba Dum Tis!</span>
+      </div>
+    </div> <!-- ROW 1 END -->
+
+    <div class="keys">
+      <!-- ROW 2 START-->
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div> <!-- ROW 2 END -->
+
+    <div class="keys">
+      <div data-key="90" class="key">
+        <kbd>Z</kbd>
+        <span class="sound">Air Horn</span>
+      </div>
+    </div><!-- ROW 3 END-->
+  </div> <!-- MAIN DIV END -->
+
+
+  <!-- ROW 1 -->
+  <audio data-key="81" src="sounds/please.wav"></audio>
+  <audio data-key="87" src="sounds/hire.wav"></audio>
+  <audio data-key="69" src="sounds/me.wav"></audio>
+  <audio data-key="82" src="sounds/you.wav"></audio>
+  <audio data-key="84" src="sounds/wont.wav"></audio>
+  <audio data-key="89" src="sounds/regret.wav"></audio>
+  <audio data-key="85" src="sounds/it.wav"></audio>
+  <audio data-key="73" src="sounds/jokeSound.wav"></audio>
+
+  <!-- ROW 2 -->
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="90" src="sounds/airhorn.wav"></audio> <!-- C -->
+
+
+  <div class="linksDiv">
+    <p class="javascript30">
+      This app was made in a day by Nate Notermann. It was based off of a tutorial from
+      <a href="https://javascript30.com/">javascript30</a>
+      I then took it a little further to both learn a little more about how it function and to add a little of my own
+      flavor to it.
+
+      <ul class="linkslist">
+        <!-- Linkdin Link -->
+        <li><a href='https://www.linkedin.com/in/nate-notermann/' target="_blank" rel="noopener noreferrer" ><img alt="linkedin"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" height='28px' /></a> -
+          Linkedin profile - <a href='https://www.linkedin.com/in/nate-notermann/' target="_blank" rel="noopener noreferrer">LINK</a></li>
+        <!-- Resume Link -->
+        <li><a href='https://docs.google.com/document/d/1mFvEvQ7kiSoQ_RPUhPihl8GRdw0UNEAm5k25bxaU5Sk/edit?usp=sharing' target="_blank" rel="noopener noreferrer"><img
+              alt="linkedin"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Google_Docs_2020_Logo.svg/800px-Google_Docs_2020_Logo.svg.png"
+              height='28px' /></a> - Resume - <a href="https://docs.google.com/document/d/1mFvEvQ7kiSoQ_RPUhPihl8GRdw0UNEAm5k25bxaU5Sk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">LINK</a></li>
+        <!-- Email Link -->
+        <li><a href="mailto: nate.notermann@gmail.com" target="_blank" rel="noopener noreferrer"><img alt="linkedin"
+              src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-Logo-2013.png" height='28px' /></a> - Don't
+          hesitate to reach out via Email - <a href="mailto: nate.notermann@gmail.com">LINK</a></li>
+      </ul>
+    </p>
+  </div>
+
+
+
+
+  <script>
+    //added an eventListener
+    //eventListener runs function, takinzzzg in the event
+
+
+    function playSound(e) {
+      // console.log('event', e, e.keyCode);
+      //document.querySelector (or attribute selector) looks for an element with a matching "keyCode"
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      // Find an element with a class of "key" (.key)
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+      if (!audio) return // stops function if no audio
+      else {
+        // console.log(audio); // console.logs if audio exists
+        audio.currentTime = 0; // rest set audio to beginning 
+        audio.play() //plays audio file
+
+        key.classList.add('playing'); // adds a class of "playing" (Vanilla Javascript)
+        // key.classList.remove('playing'); // removes a class of "playing" (Vanilla Javascript)
+        // key.classList.toggle('playing'); // toggles a class of "playing" (Vanilla Javascript)
+        console.log(key); // CL actual key element
+        setBg();
+      };
+    };
+
+
+
+    function removeTransition(e) {
+      if (e.propertyName !== 'transform') return; // skip if it doesn't exist
+      console.log(e.propertyName);
+      this.classList.remove('playing'); // remove class "playing"
+    }
+
+    const keys = document.querySelectorAll('.key'); // find ALL elements with class of "key"
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // runs function "removeTransition"
+
+    window.addEventListener('keydown', playSound);
+
+
+    const setBg = () => {
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      console.log('randomColor:', randomColor);
+      document.body.style = "--main-color:" + "#" + randomColor;
+      // color.innerHTML = "#" + randomColor;
+
+      // HOW TO MASS VARIABLE FROM HTL TO .CSS FILE IN LINK BELOW //
+      // http://www.js-craft.io/blog/passing-a-css-variable-value-from-the-html-into-the-css/ 
+
+      // HOW TO GENERATE A RANDOM COLOR AND SAVE IT IN A VARIABLE IN LINK BELOW // 
+      // https://css-tricks.com/snippets/javascript/random-hex-color/
+
+    }
+
+    // genNew.addEventListener("click", setBg);
+  </script>
+
+
+</body>
+
+</html>
