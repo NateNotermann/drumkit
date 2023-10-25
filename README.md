@@ -5,4 +5,4 @@ I made a fun little drumkit using one of the tutorials from https://javascript30
 
 There is a special message for hiring managers that plays if you tap the top row of keys in order from left to right :) 
 
-Feel free to check it out here: https://lnkd.in/g7Y4Pvkj
+Feel free to check it out here: [HERE](https://natenotermann.github.io)
