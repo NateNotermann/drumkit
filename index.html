@@ -162,9 +162,8 @@
     //added an eventListener
     //eventListener runs function, takinzzzg in the event
 
-
     function playSound(e) {
-      // console.log('event', e, e.keyCode);
+      console.log('event', e, e.keyCode);
       //document.querySelector (or attribute selector) looks for an element with a matching "keyCode"
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
       // Find an element with a class of "key" (.key)
@@ -213,6 +212,17 @@
     }
 
     // genNew.addEventListener("click", setBg);
+    function playSoundOnLoad() {
+      let loudSound = document.querySelector(`audio[data-key="90"]`)
+      if (loudSound) {
+          loudSound.currentTime = 0;
+          loudSound.play();
+          console.log('page load sound function');
+      }
+      // alert("Page has loaded!");
+    };
+
+    window.addEventListener('load', playSoundOnLoad);
   </script>
 
 
