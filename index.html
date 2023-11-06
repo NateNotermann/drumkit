@@ -212,17 +212,38 @@
     }
 
     // genNew.addEventListener("click", setBg);
+    window.onload = function() {
+      let loudSound = document.querySelector(`audio[data-key="90"]`)
+      if (loudSound) {
+          loudSound.currentTime = 0;
+          loudSound.play();
+          console.log('page load sound function 1');
+      }
+    };
+
     function playSoundOnLoad() {
       let loudSound = document.querySelector(`audio[data-key="90"]`)
       if (loudSound) {
           loudSound.currentTime = 0;
           loudSound.play();
-          console.log('page load sound function');
+          console.log('page load sound function 2');
       }
-      // alert("Page has loaded!");
     };
 
     window.addEventListener('load', playSoundOnLoad);
+
+          // Define an onclick function
+          function handleClick() {
+            console.log("Element clicked: " + this.tagName);
+        }
+
+        // Get all elements on the page
+        var allElements = document.querySelectorAll('*');
+
+        // Attach the onclick function to each element
+        allElements.forEach(function(element) {
+            element.onclick = handleClick;
+        });
   </script>
 
 
